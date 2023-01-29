@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\zenon\\Desktop\\Coding Projects\\C#\\Project1\\Project1.csproj": {}
+    "C:\\Users\\zenon\\Documents\\GitHub\\C-employee-sort\\Project1\\Project1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\zenon\\Desktop\\Coding Projects\\C#\\Project1\\Project1.csproj": {
+    "C:\\Users\\zenon\\Documents\\GitHub\\C-employee-sort\\Project1\\Project1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zenon\\Desktop\\Coding Projects\\C#\\Project1\\Project1.csproj",
+        "projectUniqueName": "C:\\Users\\zenon\\Documents\\GitHub\\C-employee-sort\\Project1\\Project1.csproj",
         "projectName": "Project1",
-        "projectPath": "C:\\Users\\zenon\\Desktop\\Coding Projects\\C#\\Project1\\Project1.csproj",
+        "projectPath": "C:\\Users\\zenon\\Documents\\GitHub\\C-employee-sort\\Project1\\Project1.csproj",
         "packagesPath": "C:\\Users\\zenon\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zenon\\Desktop\\Coding Projects\\C#\\Project1\\obj\\",
+        "outputPath": "C:\\Users\\zenon\\Documents\\GitHub\\C-employee-sort\\Project1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
