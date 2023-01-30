@@ -1,3 +1,5 @@
+using System;
+
 namespace Program1
 {
     class sort
@@ -21,14 +23,12 @@ namespace Program1
                     {
                         //unfortuantly this ends up being really inneffeciant even for bubble sort, have to swap in both arrays 
                         Console.WriteLine("Switching " + narray[i] + " with " + narray[i+1]);
-                        Console.WriteLine("\n\n");
                         var temp = lines[i];
                         lines[i] = lines[i+1];
                         lines[i+1] = temp;
                         temp = narray[i];
                         narray[i] = narray[i+1];
                         narray[i+1] = temp;
-                        Console.WriteLine("\n\n");
                     }
                 }
             }
