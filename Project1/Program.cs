@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Xml.Serialization;
 
 namespace Program1
 {
@@ -14,6 +15,7 @@ namespace Program1
             find find = new find();
             Worker W = new Worker();
             sort sort = new sort();
+            toXML toXML = new toXML();
 
             //try and catch incase of nonexistent of file, reads file
             Console.WriteLine("Please enter file path (leave blank to use default file): ");
