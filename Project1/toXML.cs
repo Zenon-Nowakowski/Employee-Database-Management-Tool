@@ -1,11 +1,18 @@
-namespace Project1
+using System;
+using System.Xml;
+namespace Program1
 {
     class toXML
     {
-        public void ToXML()
+        public static void exportXML(string filename)
         {
-            Console.WriteLine("Exporting to XML...");
-        }    
+            using (XmlWriter writer = XmlWriter.Create(filename))
+            {
+            writer.WriteStartElement("empty");  
+            //writer.WriteElementString("title");
+            writer.WriteEndElement();  
+            writer.Flush();  
+            }
+        }
     }
-    
 }

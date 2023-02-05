@@ -9,6 +9,7 @@ namespace Program1
         {
             //set default path name
             string path = "default.txt"; 
+            string xmlname = "";
             //declare variables, initialize classes
             Program p = new Program();
             consoleTables ct = new consoleTables();
@@ -46,6 +47,9 @@ namespace Program1
             find.findEmployees(lines);
             Console.WriteLine("Retirees:");
             find.findRetirees(lines);
+            Console.WriteLine("What is the name you want to give to the prehires file?: ");
+            xmlname = Console.ReadLine();
+            toXML.exportXML(xmlname);
         }
     }
 }
