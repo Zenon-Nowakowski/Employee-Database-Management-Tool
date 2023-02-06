@@ -28,6 +28,9 @@ namespace Program1
         public void findPreHire(string[] lines)
         {   //declare list of prehires 
             List<PreHired> preHiredList = new List<PreHired>();
+            preHiredList.Add(new Prehired(
+
+            ))
             //for loop to go through list, pick out prehires 
             for (int i = 1; i < lines.Count(); i++)
             {
@@ -36,15 +39,27 @@ namespace Program1
                 {
                     Console.WriteLine("Added " + names[3]);
                     preHiredList.Add(new PreHired
-                    {
-                        workType = names[0],
-                        ID = names[1],
-                        fName = names[2],
-                        lName = names[3],
-                        employDate = names[4],
-                        extended = "",
-                        accepted = ""
-                    });
+                    (
+                        //workType
+                        names[0],
+                        //ID
+                        names[1],
+                        //fName
+                        names[2],
+                        //lName
+                        names[3],
+                        //employDate
+                        names[4],
+                        //extended
+                        "",
+                        //accepted
+                        ""
+                    ));
+                }
+                foreach (var hire in preHiredList)
+                {
+                    Console.WriteLine("Author: {0},{1},{2},{3},{4}", 
+                    PreHired.workType, PreHired.ID, );
                 }
             }
         }
