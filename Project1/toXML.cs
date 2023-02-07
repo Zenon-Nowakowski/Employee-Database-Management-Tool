@@ -16,21 +16,21 @@ namespace Program1
             }
             writer.Close();
         }
-        public static void employeeExport(List<Employee> preHireList, string xmlname)
+        public static void employeeExport(List<Employee> employeeList, string xmlname)
         {
             XmlSerializer inst = new XmlSerializer(typeof(Employee));
             TextWriter writer = new StreamWriter(@xmlname);
-            foreach(var emp in preHireList)
+            foreach(var emp in employeeList)
             {
                 inst.Serialize(writer,emp as Employee);
             }
             writer.Close();
         }
-        public static void retireeExport(List<Retiree> preHireList, string xmlname)
+        public static void retireeExport(List<Retiree> retireeList, string xmlname)
         {
             XmlSerializer inst = new XmlSerializer(typeof(Retiree));
             TextWriter writer = new StreamWriter(@xmlname);
-            foreach(var retire in preHireList)
+            foreach(var retire in retireeList)
             {
                 inst.Serialize(writer,retire as Retiree);
             }
