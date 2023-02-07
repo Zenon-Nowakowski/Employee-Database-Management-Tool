@@ -41,15 +41,21 @@ namespace Program1
             sort.bubbleSort(lines);
             Console.WriteLine("Sorted!: \n");
             ct.genAll(lines);
-            Console.WriteLine("Prehires:");
-            find.findPreHire(lines);
-            Console.WriteLine("Employees:");
-            find.findEmployees(lines);
-            Console.WriteLine("Retirees:");
-            find.findRetirees(lines);
-            Console.WriteLine("What is the name you want to give to the prehires file?: ");
+
+            Console.WriteLine("Please input a name for the PreHires output file: ");
             xmlname = Console.ReadLine();
-            toXML.exportXML(xmlname);
+            Console.WriteLine("Prehires:");
+            find.findPreHire(lines,xmlname);
+
+            Console.WriteLine("Please input a name for the Employees output file: ");
+            xmlname = Console.ReadLine();
+            Console.WriteLine("Employees:");
+            find.findEmployees(lines, xmlname);
+
+            Console.WriteLine("Please input a name for the Retirees output file: ");
+            xmlname = Console.ReadLine();
+            Console.WriteLine("Retirees:");
+            find.findRetirees(lines, xmlname);
         }
     }
 }

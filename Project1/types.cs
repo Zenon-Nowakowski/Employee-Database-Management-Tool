@@ -14,15 +14,73 @@ namespace Program1
     {
         public string extended {get; set;} = default!;
         public string accepted {get; set;} = default!;
+        
+        public PreHired(string workType,string ID,string fName,
+        string lName, string employDate, string extended, string accepted)
+        {
+            this.workType = workType;
+            this.ID = ID; 
+            this.fName = fName;
+            this.lName = lName;
+            this.employDate = employDate;
+            this.extended = extended;
+            this.accepted = accepted;
+        }
+        public PreHired()
+        {}
+        public override string ToString()
+        {
+            return ("workType: " + workType + " ID: " + ID + " fName: " + fName + 
+            " lName: " + lName + " employDate: " + employDate + 
+            " extended: " + extended + " accepted: " + accepted);
+        }
     }
     public class Employee : Worker
     {
         public string title {get; set;} = default!;
         public string salary {get; set;} = default!;
+        public Employee(string workType,string ID,string fName,
+        string lName, string employDate, string extended, string accepted)
+        {
+            this.workType = workType;
+            this.ID = ID; 
+            this.fName = fName;
+            this.lName = lName;
+            this.employDate = employDate;
+            this.title = extended;
+            this.salary = accepted;
+        }
+        public Employee()
+        {}
+        public override string ToString()
+        {
+            return ("workType: " + workType + " ID: " + ID + " fName: " + fName + 
+            " lName: " + lName + " employDate: " + employDate + 
+            " title: " + title + " salary: " + salary);
+        }
     }
     public class Retiree : Worker
     {
         public string prog {get; set;} = default!;
         public string retirement {get; set;} = default!;
+        public Retiree(string workType,string ID,string fName,
+        string lName, string employDate, string extended, string accepted)
+        {
+            this.workType = workType;
+            this.ID = ID; 
+            this.fName = fName;
+            this.lName = lName;
+            this.employDate = employDate;
+            this.prog = extended;
+            this.retirement = accepted;
+        }
+        public Retiree()
+        {}
+        public override string ToString()
+        {
+            return ("workType: " + workType + " ID: " + ID + " fName: " + fName + 
+            " lName: " + lName + " employDate: " + employDate + 
+            " program: " + prog + " retirement: " + retirement);
+        }
     }
 }
